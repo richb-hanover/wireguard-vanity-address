@@ -4,7 +4,7 @@
 # Build with docker build -t wgvanity .
 # Invoke with docker run wgvanity [ string ]
 
-FROM lukemathwalker/cargo-chef:latest-rust-1.56.0 AS chef
+FROM lukemathwalker/cargo-chef:latest-rust-1 AS chef
 WORKDIR app
 
 FROM chef AS planner
